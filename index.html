@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<title>sweet5fivvle</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- Owl Carousel -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+		/>
+	</head>
+
+	<body>
+		<section class="head">
+			<div class="head_container flex1">
+				<div class="box flex">
+					<div class="head_text">
+						<label>Email:</label>
+						<span>sweet5fivvle@gmail.com</span>
+					</div>
+				</div>
+				<div class="box flex">
+					<div class="head_text">
+						<select>
+							<option>Bahasa</option>
+							<option>Inggris</option>
+							<option>Indonesia</option>
+						</select>
+					</div>
+					<div class="head_text">
+						<select>
+							<option>Mata Uang</option>
+							<option>Pound Sterling</option>
+							<option>Rupiah</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<header>
+			<div class="head_container">
+				<div class="navbar">
+					<div class="logo">
+						<img src="logo sweet fivvle (1).png" alt="logo" />
+					</div>
+					<nav>
+						<ul id="menuitem">
+							<li><a href="index (3).html">Beranda</a></li>
+							<li><a href="product.html">Tentang</a></li>
+							<li><a href="contact.html">Menu</a></li>
+							<li><a href="account.html">Kontak</a></li>
+						</ul>
+					</nav>
+					<span class="fa fa-bars" onclick="menutoggle()"></span>
+
+					<div class="account">
+						<i class="fas fa-search"></i>
+						<i class="fas fa-user"></i>
+						<i class="fas fa-shopping-cart"></i>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<script>
+			var menuitem = document.getElementById("menuitem");
+			menuitem.style.maxHeight = "0px";
+
+			function menutoggle() {
+				if (menuitem.style.maxHeight == "0px") {
+					menuitem.style.maxHeight = "600px";
+				} else {
+					menuitem.style.maxHeight = "0px";
+				}
+			}
+
+			window.addEventListener("scroll", function () {
+				var header = document.querySelector("header");
+				header.classList.toggle("sticky", window.scrollY > 50);
+			});
+		</script>
+
+		<section class="home">
+			<div class="head_container">
+				<div class="owl-carousel owl-theme">
+					<div class="slide">
+						<div class="slide-content flex">
+							<div class="left top">
+								<h1>Sweet Potatoes</h1>
+								<p>
+									Ubi adalah sumber nutrisi yang kaya dan bernilai tinggi.
+									Mereka mengandung berbagai vitamin dan mineral penting,
+									seperti vitamin A, vitamin C, vitamin B6, kalium, magnesium,
+									dan zat besi. Vitamin A dalam ubi, terutama pada ubi orange
+									dan ubi ungu, berperan penting dalam menjaga kesehatan mata
+									dan sistem kekebalan tubuh. Selain itu, kandungan seratnya
+									juga membantu menjaga pencernaan yang sehat dan mengurangi
+									risiko penyakit kronis seperti penyakit jantung dan diabetes.
+								</p>
+								<button class="btn1">Beli Sekarang</button>
+							</div>
+							<div class="right">
+								<img
+									src="ubi_awal-removebg-preview.png"
+									alt=""
+									style="height: auto"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="slide-content flex">
+							<div class="right">
+								<img
+									src="ubi_oren-removebg-preview.png"
+									alt=""
+									style="height: auto"
+								/>
+							</div>
+							<div class="left top">
+								<h3>orange sweet potatoes</h3>
+								<h1>Ubi Orange</h1>
+								<p>
+									Warna orange pada ubi jalar disebabkan oleh adanya senyawa
+									betakaroten yang berfungsi sebagai provitamin A. Kandungan
+									betakaroten ini dapat mencegah kanker, penuaan dini, penyakit
+									jantung, stroke, katarak, sengatan cahaya matahari dan
+									gangguan otot.
+								</p>
+								<button class="btn1">SHOP NOW</button>
+							</div>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="slide-content flex">
+							<div class="left top">
+								<h3>purple sweet potatoes</h3>
+								<h1>Ubi Ungu</h1>
+								<p>
+									Selain sumber karbohidrat dan protein tinggi, ubi jalar ungu
+									juga mengandung vitamin A, C, B1, dan riboflavin. Ditambah zat
+									besi, fosfor dan kalsium sehingga sangat baik dikonsumsi untuk
+									kesehatan tubuh. Zat antosianin yang tersimpan dalam ubi jalar
+									ungu ini ternyata mampu mencegah gangguan pada fungsi hati.
+								</p>
+								<button class="btn1">SHOP NOW</button>
+							</div>
+							<div class="right">
+								<img
+									src="ubi_ungu-removebg-preview.png"
+									alt=""
+									style="height: 330px"
+									;
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Jquery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- Owl Carousel -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		<!-- Custom Javascript -->
+		<script>
+			$(document).ready(function () {
+				$(".owl-carousel").owlCarousel({
+					items: 1,
+					loop: true,
+					nav: false,
+					dots: true,
+					autoplay: false,
+				});
+			});
+		</script>
+
+		<section class="offer">
+			<div class="container center">
+				<div class="content flex">
+					<div class="box flex">
+						<div class="text">
+							<p>Menu Terbaru</p>
+							<h3>Sweet <span>Cakelie</span></h3>
+							<button class="btn2">BELI SEKARANG</button>
+
+							<div class="bottom_text">
+								<p><span>SWEET</span> OF</p>
+								<p>THE <span>POTATOES</span></p>
+							</div>
+						</div>
+						<div class="img">
+							<img src="bungeoppang  (5)_1.png" alt="" />
+						</div>
+					</div>
+					<div class="box box2 flex">
+						<div class="img">
+							<img src="bungeoppang___5__2-removebg-preview.png" alt="" />
+						</div>
+						<div class="text">
+							<div class="text_top">
+								<p>DISKON <label>70%</label></p>
+							</div>
+							<p>Menu Terbaru</p>
+							<h3>Sweet <span>Cakelie</span></h3>
+							<button class="btn2">BELI SEKARANG</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="time">
+			<div class="container flex mtop">
+				<div class="left mtop">
+					<h2>Penawaran Terbaik</h2>
+					<h3>Sweet Bollie</h3>
+					<p>
+						Sweet Boliie yang berarti bola ubi. Nama Sweet Bollie berasal dari
+						kata Sweet; dan kata Bollie;. Kata Sweet berasal dari nama brand
+						kami, yaitu Sweet Fivvle, Sedangkan kata Bollie berasal dari bentuk
+						bola ubi yang bulat.
+					</p>
+					<h1>08 : 09 : 06</h1>
+				</div>
+				<div class="right">
+					<img src="bollie oren.png" alt="" />
+				</div>
+			</div>
+		</section>
+
+		<section class="product mtop">
+			<div class="container">
+				<div class="heading heading2">
+					<h3>Fivvle Menu</h3>
+					<h2>Menu Terbaru</h2>
+				</div>
+
+				<div class="content mtop grid">
+					<div class="box">
+						<div class="img">
+							<img src="menu of sweet.png" />
+							<img src="menu of sweet.png" class="upper-image" />
+						</div>
+						<div class="rate">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<div class="text">
+							<h3>Sweet Bollie</h3>
+							<p><span>Rp.20.000 </span> Rp.15.000</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="img">
+							<img src="coco.png" />
+							<img src="coco.png" class="upper-image" />
+						</div>
+						<div class="rate">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<div class="text">
+							<h3>Sweet Cocobollie</h3>
+							<p><span>Rp.25.000</span> Rp.19.000</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="img">
+							<img src="golldie.png" />
+							<img src="golldie.png" class="upper-image" />
+						</div>
+						<div class="rate">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i>
+						</div>
+						<div class="text">
+							<h3>Sweet Golldie</h3>
+							<p><span>Rp.30.000 </span> Rp.25.000</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="img">
+							<img src="ricellie.png" />
+							<img src="ricellie.png" class="upper-image" />
+						</div>
+						<div class="rate">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<div class="text">
+							<h3>Sweet Ricellie</h3>
+							<p><span>Rp.35.000 </span> Rp.30.000</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="img">
+							<img src="casslie.png" />
+							<img src="casslie.png" class="upper-image" />
+						</div>
+						<div class="rate">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<div class="text">
+							<h3>Sweet Casslie</h3>
+							<p><span>Rp.35.000 </span> Rp.31.000</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="img">
+							<img src="orange.png" />
+							<img src="orange.png" class="upper-image" />
+						</div>
+						<div class="rate">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
+						<div class="text">
+							<h3>Sweet Orangelie</h3>
+							<p><span>Rp.40.000 </span> Rp.35.000</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="customer mtop">
+			<div class="container">
+				<div class="heading heading2">
+					<h3>Fivvle Review</h3>
+					<h2>Ulasan Pelanggan</h2>
+				</div>
+
+				<div class="owl-carousel owl-carousel2 owl-theme mtop">
+					<div class="item">
+						<div class="box flex">
+							<div class="image">
+								<div class="img">
+									<img src="cewe testi.jpg" alt="" />
+								</div>
+							</div>
+							<div class="text">
+								<p>
+									Bukan hal yang mudah untuk membangun bisnis dengan tema pangan
+									lokal khas Indonesia terutama di zaman sekarang. Mayoritas
+									anak muda pasti berpikir jika makanan tradisional terkesan
+									kuno dan ketinggalan zaman. Namun Sweet Fivvle dapat merubah
+									perspektif itu semua. Menu makanan tradisional disini menjadi
+									lebih modern, mulai dari nama makanan, pengemasan, dan
+									tampilan makanan tersebut tanpa mengubah ciri khas dari
+									makanannya.
+								</p>
+							</div>
+						</div>
+						<h1>Afsana Aghniya <span>CEO Fresh Food</span></h1>
+					</div>
+					<div class="item">
+						<div class="box flex">
+							<div class="image">
+								<div class="img">
+									<img src="cowo testi.jpg" alt="" />
+								</div>
+							</div>
+							<div class="text">
+								<p>
+									Saya sangat suka dengan Sweet Bollie yang terbuat dari ubi
+									jalar ungu. Makanan ini populer karena rasanya yang lezat dan
+									teksturnya yang kenyal. Selain Sweet Bollie saya juga menyukai
+									makanan lainnya yang terbuat dari ubi, karena Ubi adalah
+									sumber nutrisi yang kaya dan bernilai tinggi. Ubi berperan
+									penting dalam menjaga kesehatan mata dan sistem kekebalan
+									tubuh saya.
+								</p>
+							</div>
+						</div>
+						<h1>Hanish Abbas <span>CEO Banana Choco</span></h1>
+					</div>
+					<div class="item">
+						<div class="box flex">
+							<div class="image">
+								<div class="img">
+									<img src="anak cewe testi.jpg" alt="" />
+								</div>
+							</div>
+							<div class="text">
+								<p>
+									Makanan favorit aku disini ada banyak bangettt, contohnya ada
+									Sweet Cocobollie yang biasa dikenal orang dengan klepon.
+									Rasanya enakk, manisss tapi ngga kemanisan, ngga enek kalo
+									makan banyak. Biasanya anak muda zaman sekarang ngga kenal
+									dengan klepon, tapi dengan adanya Sweet Fivvle, aku yakin
+									makanan Indonesia bisa lebih terkenal ke seluruh dunia.
+								</p>
+							</div>
+						</div>
+						<h1>Kaamisha Kanza <span> Mahasiswa </span></h1>
+					</div>
+					<div class="item">
+						<div class="box flex">
+							<div class="image">
+								<div class="img">
+									<img src="anak cowo testi.jpg" alt="" />
+								</div>
+							</div>
+							<div class="text">
+								<p>
+									Makanan khas Indonesia memang banyak sekali yang berbahan
+									dasar ubi, tapi menurutku, aku lebih sukaa dengan ubi yang
+									hanya dikukus/dibakar, ngga perlu ditambah bahan apa-apa lagi,
+									rasanyaa tetep enak. Contohnya seperti ubi bakar cilembu.
+									Semoga dengan adanya Sweet Fivvle, makanan tradisional pangan
+									khas indonesia menjadi semakin mendunia.
+								</p>
+							</div>
+						</div>
+						<h1>Jaffan Al Habib <span> Mahasiswa</span></h1>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script>
+			$(".owl-carousel2").owlCarousel({
+				loop: true,
+				margin: 20,
+				nav: true,
+				dots: false,
+				responsive: {
+					0: {
+						items: 1,
+					},
+					768: {
+						items: 1,
+					},
+					1000: {
+						items: 2,
+					},
+				},
+			});
+		</script>
+
+		<script>
+			$(".owl-carousel3").owlCarousel({
+				loop: true,
+				margin: 20,
+				nav: false,
+				dots: false,
+				responsive: {
+					0: {
+						items: 1,
+					},
+					768: {
+						items: 4,
+						dots: true,
+					},
+					1000: {
+						items: 5,
+					},
+				},
+			});
+		</script>
+
+		<footer>
+			<div class="container mtop grid">
+				<div class="box">
+					<div class="logo">
+						<img src="logo sweet fivvle (1).png" alt="" / style="height: 70px;">
+					</div>
+					<p>
+						Sweet Fivvle merupakan sebuah Perusahaan Swasta asal Indonesia yang
+						berdiri sejak 2019, bergerak dibidang makanan, khususnya pangan
+						lokal khas Indonesia. Perusahaan ini sudah berdiri selama 5 tahun
+						dan sudah berada di 50 negara besar di dunia, seperti Amerika
+						Serikat, China, Korea Selatan, Swiss, Jerman dan 45 negara besar
+						lainnya.
+					</p>
+
+					<div class="social_media flex">
+						<img src="https://img.icons8.com/color/48/000000/facebook.png" />
+						<img
+							src="https://img.icons8.com/color/48/000000/instagram-new--v2.png"
+						/>
+						<img src="https://img.icons8.com/color/48/000000/tiktok--v1.png" />
+					</div>
+				</div>
+
+				<div class="box center">
+					<div class="news_icon">
+						<i class="fas fa-envelope-open-text"></i>
+					</div>
+					<div class="news">
+						<h2>Bergabunglah dengan kami</h2>
+						<p>
+							Masukkan alamat email anda dan tunggu berita terbaru dari kami
+						</p>
+						<div class="send flex1">
+							<input type="text" placeholder="Masukkan email anda" />
+							<span class="fas fa-paper-plane"></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="input flex">
+						<div class="icon">
+							<i class="fas fa-phone-alt"></i>
+						</div>
+						<div class="text">
+							<h3>Hubungi</h3>
+							<label>+62 859-2982-7713</label>
+						</div>
+					</div>
+					<div class="input flex">
+						<div class="icon">
+							<i class="fas fa-envelope"></i>
+						</div>
+						<div class="text">
+							<h3>Email</h3>
+							<label>info@sweet5fivvle.com</label>
+						</div>
+					</div>
+					<div class="input flex">
+						<div class="icon">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+						<div class="text">
+							<h3>Alamat</h3>
+							<label
+								>Dr. Radjiman Widyodiningrat, Pulojahe, Cakung, Jakarta Timur,
+								DKI Jakarta, Indonesia.</label
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
